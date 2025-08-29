@@ -91,4 +91,4 @@ jobs:
     image: quay.io/pypa/manylinux2010_x86_64
     steps:
       - promote: sd-cmd promote python/pypirun latest stable
-    # requires: [test_sd_cmd_fedora, test_sd_cmd_manylinux2010,  test_sd_cmd_manylinux2014]
+    requires: [publish_sd_cmd]
